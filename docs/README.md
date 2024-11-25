@@ -1,0 +1,3 @@
+This is the current documentation for the project that is being created (it is still a work in progress so this will eventually be updated with more information). This project seeks to find the difference in effectiveness between two different compression algorithms. Right now not much is able to be presented but that will cahnge in later itterations of the project and more information and a better presentation will be made in the UI_implementation.py file so that results can more easily be interperated.
+
+IN ORDER TO RUN THE TEST HERE USE: "poetry run pytest"

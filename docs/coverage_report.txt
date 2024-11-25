@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-7.4.4, pluggy-1.5.0
+PyQt5 5.15.11 -- Qt runtime 5.15.15 -- Qt compiled 5.15.14
+rootdir: /Users/erikolsson/Desktop/UoH Work Folder/AI Labs/AI labs Project
+plugins: qt-4.4.0, cov-4.1.0
+collected 3 items
+
+tests/test_huffman.py .                                                  [ 33%]
+tests/test_lzw.py .                                                      [ 66%]
+tests/test_ui.py .                                                       [100%]
+
+---------- coverage: platform darwin, python 3.9.6-final-0 -----------
+Name                                                            Stmts   Miss  Cover
+-----------------------------------------------------------------------------------
+src/ai_labs_project/Huffman3_with_compress_serialized_tree.py      61      2    97%
+src/ai_labs_project/Lempel_with_compress.py                        49      3    94%
+src/ai_labs_project/UI_implementation.py                           52      9    83%
+src/ai_labs_project/__init__.py                                     0      0   100%
+-----------------------------------------------------------------------------------
+TOTAL                                                             162     14    91%
+
+
+============================== 3 passed in 0.20s ===============================

@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "ai-labs-project"
+version = "0.1.0"
+description = "Project for AI Labs"
+authors = ["Erik"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyQt5 = "^5.15.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.0"
+pytest-cov = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest-qt = "^4.4.0"
+
+[tool.pytest.ini_options]
+addopts = "--cov=src/ai_labs_project --cov-report=term"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
