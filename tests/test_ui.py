@@ -1,4 +1,4 @@
-from src.ai_labs_project.UI_implementation import CompressorUI
+from src.UI_implementation import CompressorUI
 from unittest.mock import MagicMock
 import pytest
 from PyQt5.QtCore import Qt

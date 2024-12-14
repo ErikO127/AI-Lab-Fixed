@@ -1,4 +1,4 @@
-from src.ai_labs_project.Huffman3_with_compress_serialized_tree import compress
+from src.Huffman3_with_compress_serialized_tree import compress
 from pathlib import Path
 import os
 

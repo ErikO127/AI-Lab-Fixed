@@ -89,9 +89,9 @@ class CompressorUI(QMainWindow):
             # Display results
             original_size = len(input_text)
             self.text_results.setText(
-                f"Original Size: {original_size} bytes\n"
+                f"Original Text Size: {original_size} bytes\n"
                 f"Huffman Compressed Size: {huffman_compressed_size} bytes\n"
-                f"Lempel Compressed Size: {lempel_compressed_size} bytes"
+                f"Lempel-Ziv Compressed Size: {lempel_compressed_size} bytes\n"
             )
 
             # Visualize results
