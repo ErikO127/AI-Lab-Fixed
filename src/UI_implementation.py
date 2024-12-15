@@ -25,6 +25,7 @@ lempel_module = load_module_from_file('Lempel_with_compress.py', 'lempel')
 class CompressorUI(QMainWindow):
     def __init__(self):
         super().__init__()
+        self.lempel_module = lempel_module
         self.init_ui()
 
     def init_ui(self):
@@ -82,12 +83,19 @@ class CompressorUI(QMainWindow):
         try:
             # Perform Huffman compression
             huffman_compressed_data, huffman_compressed_size = huffman_module.compress(input_text)
-            # Perform Lempel compression
-            lempel_compressed_data = lempel_module.compress(input_text)
-            lempel_compressed_size = len(lempel_compressed_data)
+
+            # Save input text to a temporary file for Lempel compression
+            input_file = "temp_input.txt"
+            lempel_output_file = "compressed.lzw"
+            with open(input_file, 'w') as file:
+                file.write(input_text)
+
+            # Perform Lempel compression and get file size
+            lempel_module.lzw_compress(input_file, lempel_output_file)
+            lempel_compressed_size = os.path.getsize(lempel_output_file)
 
             # Display results
-            original_size = len(input_text)
+            original_size = len(input_text.encode('utf-8'))  # Get size of original text in bytes
             self.text_results.setText(
                 f"Original Text Size: {original_size} bytes\n"
                 f"Huffman Compressed Size: {huffman_compressed_size} bytes\n"
@@ -99,6 +107,7 @@ class CompressorUI(QMainWindow):
 
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Compression failed: {e}")
+
 
     def show_compression_graph(self, original_size, huffman_size, lempel_size):
         data = {
