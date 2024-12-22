@@ -55,4 +55,5 @@ The app will display:
 ## Acknowledgements
 
 **Huffman Encoding:** Claude Shannon and Robert Fano's foundational work on data compression.
+
 **LZW Compression:** Terry Welch's adaptation of the original Lempel-Ziv algorithm.
