@@ -1,0 +1,923 @@
+- Chemistry Extended Essay -
+A spectrometric investigation of the correlation between complex ions and their ligands
+What is the effect on light absorbance when changing the concentration of different aqueous
+solutions forming complex ion structures?
+hlf925
+1
+Introduction 3
+Background information: 3
+Research question: 6
+Variables: 7
+Independent variable: 7
+Dependant variable: 8
+Controlled variable: 8
+Materials and Methods 8
+Apparatus list: 8
+Procedure: 9
+Experiment procedure 1: 9
+Part 2 10
+Risk assessment: 11
+Results 12
+Data collection: 12
+Part 1 12
+Part 2 12
+Data Analysis: 13
+Discussion and evaluation 13
+Discussion of data and results 13
+Part 1 13
+Quantitative: 15
+Part 1 15
+Part 2 18
+Evaluation of methodology: 20
+Conclusion: 21
+Bibliography: 22
+Appendices 24
+Text Appendix: 24
+Detailed variables appendix: 24
+Detailed method appendix: 26
+Part 1 26
+Part 2 27
+2
+Data collection: 28
+Part 1 28
+Part 2 28
+Uncertainty calculations: 28
+Picture appendix: 30
+Introduction
+Background information:
+The term spectrochemical can be broken into two different words describing what it means,
+spectro- which refers to the electromagnetic spectrum, and chemical which links to atomic
+chemical properties. Ligands are a part of a unique area in chemistry explaining many
+phenomenons when it comes to colors that we observe and have been used by humans for a
+long time stretching back as far as ancient egyptians and are still in us in today's world.
+Coordination compounds are atomic compounds that are formed when a special types of bonds
+are formed between the central ion and the outer ligands. The central ion is always metallic and
+the outer ion can be a variety of different common non metallic molecules or atomic ions which
+in a complex compound are named Ligands. Some of the more common molecules that are
+able to act as ligands in coordination complexes are water, chlorine atom ion and ammonia
+3
+1
+The bonds that are formed in order to give a coordination compound its unique properties are
+called coordinate bonds (or also referred to as dative bonds). Coordinate (dative) bonds are
+similar and different to both covalent and ionic bonds in the properties of the bonds that are
+formed. In a coordinate bond the lewis acid (outer molecule/atom) donates an electron pair to
+the central ion (lewis base), however, not as in an ionic bond such that clear negative and
+positive dipoles are formed, but partially. The coordinate bond does however create partial
+dipoles hence the reason positively charging it, hence hence the reason the terms lewis acid
+and lewis base exist (lewis base being the central ion).
+One of these unique properties to coordinate bonds is d-orbital splitting, which happens due to
+the bonds created in coordinate bonds splitting the electron orbitals into two different levels.
+Normally a d-orbital consists of five different electron orbitals which lie on the same energy level,
+these orbitals are , , , , and . However, when ligands with negative charge
+dxy dxz dyz d
+2− 2 d
+2
+x y
+z2
+are present around the central metal ion, the d-orbital electron gets affected by the repulsion
+greatly and must therefore lower some electrons to a lower energy level in order to compensate.
+The , and feel the repulsion of the negative ligand greater than the , and
+dxy dxz dyz d
+2− 2 d
+x y
+z2
+electron orbitals due to their strict presence in the cartesian axis of the d-orbital (the xyz axis on
+3
+a 3-dimensional plot) . Once the , and dxy dxz dyz
+orbitals move to a lower energy level, the
+d
+2− 2 d
+, and x y
+z2
+move up in energy respective to the decrease of the other orbitals. These two
+1 Libretexts.
+“Crystal Field Theory.
+” Chemistry LibreTexts , Libretexts, 16 Sept. 2020,
+chem.libretexts.org/Bookshelves/Inorganic
+_
+Chemistry/Modules
+and
+Websites
+_
+_
+_(Inorganic
+_
+Chemistry)/Cr
+ystal
+Field
+_
+_
+Theory/Crystal
+Field
+_
+_
+Theory.
+2 “Shapes of the 3d Orbitals in 3D.
+” ChemTube3D , 30 Aug. 2019, www.chemtube3d.com/orbitals-d/ .
+3 “Crystal Field Splitting.
+” Crystal Field Splitting - an Overview | ScienceDirect Topics ,
+www.sciencedirect.com/topics/chemistry/crystal-field-splitting .
+4
+dxy dxz dyz d
+2− 2 d
+new orbitals are named t 2g ( , and ) and the e g ( , and ) with an energy
+x y
+z2
+difference measured in Δo E=
+and can expressed through the equation λ 4 5
+equation used to calculate the energy of a light wave of wavelength .
+hc
+λ
+which is also the
+In the area of spectrochemistry there is a theory which states and defines the correlation
+between the variables in how light absorbent an aqueous substance is. This theory is called
+Beer’s law and states Beer’s law, also called Lambert-Beer law or Beer-Lambert law, in
+spectroscopy, a relation concerning the absorption of radiant energy by an absorbing medium
+(Britannica). The relationship is presented in the form of a mathematical equation with three
+variables of which two are manipulatable. The equation is as follows:
+A= ε
+lc
+In the equation ‘A’ represents the absorptivity of the aqueous medium that is being analysed,
+‘ ’
+ε
+the molar attenuation coefficient, which is a more complicated way of explaining the general
+absorptivity of the molecule of interest.
+‘c’ and ‘l’ stand for the concentration of the solution and
+6
+the path length, which expresses the distance that the light has to travel through the medium .
+These are the two variables that can be manipulated to get a different value of ‘A’ depending on
+the setup of the experiment and the resources used. Absorptivity is measured using the range
+of values from 0-3 representing a percentage of the light absorbed. When a spectrometer
+places the value of ‘A’ at 0 it means that 0% of the light was absorbed, 1 means that 1% was
+absorbed, 2, 10%, and finally 3 showing that 100% of the light was absorbed.
+4 “Tutor.net.
+” Video , www.video-tutor.net/ .
+5 Libretexts.
+“5.9: Spectrochemical Series.
+” Chemistry LibreTexts , Libretexts, 14 July 2020,
+chem.libretexts.org/Bookshelves/Inorganic
+_
+Chemistry/Book:
+Introduction
+to
+_
+_
+_
+Inorganic
+_
+Chemistry/05:
+_
+oordination
+_
+Chemistry_
+and
+_
+Crystal
+Field
+_
+_
+Theory/5.09:
+_
+Spectrochemical
+Series.
+_
+6 “Beer's Law.
+” Encyclopædia Britannica , Encyclopædia Britannica, Inc.,
+www.britannica.com/science/Beers-law.
+C
+5
+A spectrophotometer is a machine that is used to analyse aqueous solutions to determine the
+absorptivity of the solution ranging through the infrared-ultraviolet electromagnetic wavelengths.
+It does this by shining a light containing all of the wavelengths of light in the given range through
+a container of specific length containing an aqueous chemical solution. Once the light has
+traveled through the container it reaches the sensor on the other side seensing how much of
+each wavelength of light made it through.
+In basic spectrochemistry there is a diagram that is often used in order to easily identify what
+color of light is absorbed and then inversely emitted. The diagram consists of a color wheel
+Research question:
+What is the effect on light absorbance of a spectrophotometric analysis when changing the
+concentration and ligand of different aqueous solutions forming complex ion structures?
+The beer-lambert law is the most suitable theory for determining the correlation between the
+concentration and the absorbance as it incorporates both of the variables. By decreasing the
+concentration of the reagents that will be reacting with the hydrated copper (II) sulfate a
+correlation can be determined between the concentration and the absorbance. As the value of
+the molar attenuation coefficient should stay constant for each of the copper complexes formed,
+it can be used to determine the reliability of the absorbance measurement. The equation that
+accompanies the beer-lambert law is what incorporates the variable that will be changed and
+analysed:
+A= ε
+cl
+The crystal field theory equation used to determine the energy needed in order to promote an
+electron to the higher energy d-orbital will also be analysed in order to find a correlation
+between the ligand used and the color of light absorbed. Doing this will test to see if there is a
+6
+correlation between the strength of the ligands used to replace the water ligand of hydrated
+copper (II) sulfate. This will also determine the validity of the spectrochemical series in the
+energy difference between the ligands.
+Though ultimately, the results of this experiment will investigate the usage of the beer-lambert
+law equation in accurately being able to determine variables in its equation such as the molar
+attenuation coefficient in laboratory environments. Since copper complexes already exist in bio
+organisms and are essential in electron transfer processes, it has been found that they are
+suitable for certain types of photovoltaic systems. These photovoltaic cells named “solid-state
+perovskite solar cells” are solar cells made using copper complexes and have been recorded at
+7
+having an efficiency of 18.5%, getting close to the efficiency of standard solar cells . Being able
+to accurately calculate the absorptivity will be essential in choosing chemical complexes that will
+be good candidates in testing for optimal photovoltaic cells, which might later replace the
+common solar panels.
+Variables:
+Independent variable:
+Throughout the experiment two things will be changed, the ligand replacing the water molecules
+and the concentration of the reagents that will be reacting with the hydrated copper (II) sulfate.
+In part 1 of the experiment the ligands will be changed, in part 2 the concentration of the same
+reactions in part 1 will be changed.
+7 “Cu(II) Complexes as PType Dopants in Efficient Perovskite Solar Cells.” doi:10.1021/acsenergylett.6b00691.s001.
+7
+Dependant variable:
+Three things will be measured in the experiment, the absorbance, time and peak wavelength.
+The absorbance and peak wavelength will be measured in part 1 of this experiment and
+absorbance along with time will be measured in part 2.
+Controlled variable:
+The most important things that will be controlled during this experiment will be the amount of
+copper solution used in the reaction, the path length of the cuvette, and the final volume of the
+reacted solution. Since the experiment is about finding how the ligands solution affects the
+copper complex ion, it needs to be kept the same in order for feasible data analysis to be done.
+The final volume of the reacted solution has to be kept constant, changing the final volume of
+the reacted solution will change the concentration and distort the data.
+Materials and Methods
+Apparatus list:
+● 80ml beakers
+● 1ml ±0.006ml pipette
+● 2ml ±0.006ml pipette
+● 5ml ±0.01ml pipette
+● Pipette fillers
+● 1mol/dm copper sulfate
+● 10ml Measuring cylinder
+● 0.1mol/dm Potassium thiocyanate
+● 2mol/dm Hydrochloric acid
+8
+● 1mol/dm sodium hydroxide
+● 5% ammonia solution
+● Distilled water
+● Cuvette
+● PASCO Spectrometer
+Procedure:
+Experiment procedure 1:
+1. 2. 3. 4. 5. Set up a spectrophotometer with the accompanying application (spectrometry by
+PASCO) and calibrate it.
+Dilute a concentrated hydrated copper (II) sulfate solution in order to make an excess
+amount of 0.1M copper solution in a beaker using a pipette
+In a measuring cylinder, measure and dilute each reagent (HCl, NaOH, KSCN and
+NH 4 OH) to a 10ml solution each with a concentration of 0.5M, apart from Potassium
+thiocyanate which will be found in 0.1M solution.
+Pouring 1ml of the copper solution and 2ml of the reagent solution, place the cuvette into
+the spectrophotometer and analyse the absorbance for the wavelengths present.
+Record the data gathered and repeat the reactions with each diluted reagent in order to
+get spectrophotometric graphs for each reacted solution, labeling each graph with the
+chemical equation of the products.
+9
+Figure 1 - labeled view of spectrometry application for part 1
+Part 2
+1. 2. 3. 4. 5. Mark the graphs from part 1 using the coordinate tool for which wavelength has the
+highest absorbance for each of the complex ion solutions created.
+Select the ‘time’ graph on the spectrometry application and select the active solution for
+which an absorbance over time graph is going to be created for and set the sample rate
+to 5Hz.
+Create 10ml of diluted solutions for the same reagents mentioned in part 1 for each of
+the concentrations mentioned in the IV.
+Using a pipette, pour 1ml .1M hydrated copper (II) sulfate in a cuvette and place it in the
+spectrometer and fill another pipette with 2ml of the reagent.
+Quickly start recording the absorbance over time graph and then pour in the 2ml of
+reagent.
+10
+6. Record the reaction for 60 seconds or until a noticeable change stops occurring in the
+graph.
+Figure 2 - labeled view of spectrometry application for part 2
+Risk assessment:
+Moderately concentrated hydrochloric acid:
+● Irritant
+● Corrosive
+Implications:
+DANGER. causes burns. The vapour irritates the lungs.
+Sodium Hydroxide solution:
+● Corrosive
+● Harmful
+Implications:
+DANGER: causes severe skin burns and eye damage. Potassium hydroxide is also harmful if
+swallowed if 3 M or more.
+11
+Concentrated ammonia solution:
+● Corrosive
+● Irritant (respiratory)
+Concentrated Copper Sulfate solution:
+● Corrosive (eyes)
+● Harmful (ingestion)
+● Irritant (skin)
+● Lasting environmental damage
+Potassium Thiocyanate:
+● Irritation
+Results
+Data collection:
+Part 1
+Appendix raw data part 1
+Figure A
+Figure B
+Figure C
+Figure D
+Figure E
+Part 2
+Appendix raw data part 2
+Figure F
+Figure G
+Figure H
+Figure I
+12
+Data Analysis:
+Figure J
+Figure K
+Figure L
+Figure M
+Discussion and evaluation
+Discussion of data and results
+Part 1
+During the first part of the experiment some of the more clear things noticed was the difference
+in the absorbance graph that was shown for the different colored solutions. Since these tests
+were done in order to determine both what wavelengths of light waves absorbed and which
+wavelength had the highest absorbance, a lot of analysis can be made for the different
+solutions. During the spectroscopic analysis when exchanging the H 2 O ligands on the hydrated
+copper (II) sulfate with chlorine ions from HCl (hydrochloric acid) the predicted change was that
+the solution would turn turquoise. After the reaction had undergone there was no change in
+color when analysing the solution by eye and similarly when the solution was placed in the
+spectrometer. The only difference observed between the hydrated copper (II) sulfate and the
+reacted copper chloride complex was that the level of absorbance in the reacted copper chloride
+was slightly higher than that of the diluted hydrated copper (II) sulfate solution. When adding
+ammonia solution to the diluted hydrated copper (II) sulfate solution it turns a deep blue color as
+the ammonia molecules replace the water as ligands. During the reaction between hydrated
+13
+copper (II) sulfate and potassium thiocyanate the solution goes from light blue to lime green,
+later developing an opaque precipitate. A few hours later turning the opaque green solution into
+a clear solution with a white precipitate. During the final reaction between hydrated copper (II)
+sulfate and sodium hydroxide. This reaction is much faster than the potassium thiocyanate
+reaction yielding a similar result where the solution turns cloudy leaving a blue precipitate in a
+clear solution.
+There were some interesting observations made when analyzing the reactions of the lower
+concentration solution of the independent variable reagents. Though there was a general trend
+where the product solution turned lighter in saturation, there was a different trend with the
+addition of lower concentration of sodium hydroxide and ammonia solution. Instead of the
+reaction producing less precipitate or the same with less opacity, the product of the sodium
+hydroxide reaction became more gelatinous and firm with roughly the same if not a darker color.
+The reason behind this is due to Copper (II) hydroxide being slightly amphoteric thus being
+soluble in an excess solution of concentrated sodium hydroxide solution, creating tetrahydroxy
+2− 8
+cuprate ( [ 4
+Cu(OH) ]
+) . Since the reagents that reacted with the hydrated copper sulfate
+ranged from 1M, 0.5M, 0.2M, and 0.1M, it wasn't until the sodium hydroxide was at 0.1M where
+the desired reaction took place (when considering volume of reagents used in the reaction). The
+second solution that had an interesting product when reacted at a lower concentration was the
+ammonia solution. Instead of this reaction creating a dark blue solution with no precipitate as it
+normally does, a clear solution was produced with a light-blue precipitate. This reaction is very
+similar to the low concentration sodium hydroxide reaction due to the stages that take place
+8 Norkus, Eugenijus, and Algirdas Vaškelis.
+“Determination of Tetrahydroxycuprate and Copper(II)-NTA
+Complex Stability Constants by Polarographic and Spectrophotometric Methods.
+” Polyhedron , Pergamon,
+10 Apr. 2001, www.sciencedirect.com/science/article/abs/pii/S0277538700836682
+14
+before creating the tetraammine copper (II) sulfate. Since the reaction of copper (II) sulfate and
+ammonia solution normally occurs with an excess in ammonia the reaction process looks as
+follows:
+2−
+−
+[ 2 6
+Cu(H O) ] N H Cu(H O) (OH) ] N H
++ 2 3 → [ 2 4 2 + 2 4
+2+
+Cu(H O) (OH) ] N H [ 2 4 2 + 2 3 → [ 3 4 2 2
+Cu(N H ) (H O) ]
+However, if not enough ammonia is present in order to carry this process out fully it will stop half
+way, resulting in the product of the reaction being identical to the reaction between copper
+sulfate and sodium hydroxide, with one difference. Since there are no hydroxide ions present in
+the product solution such as in a sodium hydroxide solution, no tetrahydroxy cuprate will be
+produced, creating a pure copper (II) hydroxide precipitate.
+Quantitative:
+Part 1
+Analysing the original hydrated copper (II) sulfate solution an observation can be made that the
+peak wavelength of absorption lays at 786nm meaning that it is in the infrared region. However,
+the absorption of light in the other wavelengths that are above half of the peak absorption range
+from 670nm to 950nm, meaning that it absorbs a lot of the light past infrared but also much red
+light. Using the value for the maximum absorption a calculation can be made finding the molar
+attenuation coefficient. Writing out the equation used in order to get this value,
+0 = ε × 1 × 0
+.553 .33
+Rearranging the equation gives:
+ε = 0.553
+1×0.33
+1 = 768
+.66
+1×0.33
+15
+Following this same process for the remainder of the reactants gives a molar attenuation
+coefficient for each of the compound formed
+Solution Equations ( )
+A= ε Molar attenuation coefficient
+lc
+( L ⋅mol −1 ⋅ cm −1 )
+3ml .033
+¯
+M [Cu(H 2 O) 6 ] SO4 .553 .33
+0 = ε × 1 × 0 1.66
+¯
+3ml 0.33
+M [Cu(Cl) 4 (H 2 O) 2 ] .
+569 = ε × 1 × 0 .33
+1.788
+¯
+3ml 0.33
+[Cu(NH 3 ) 4 (H 2 O) 2 ] 1 = ε × 1 × 0 4.524
+.508 .33
+¯
+3ml 0.33
+M
+[Cu(SCN) 2 (H 2 O) 4 ]
+.276 .33
+1 = ε × 1 × 0 3.838
+¯
+3ml 0.33
+M [Cu(H 2 O) 4 (OH) 2 ] > 3 = ε × 1 × 0 .33
+> 9
+(keep in mind that for the CuSCN the measurement was stopped as soon as the initial reaction
+was complete)
+Another thing that we are able to get from the spectroscopic analysis is the energy needed for
+an electron in the d-orbital split to be promoted and which complex compounds have a larger
+split in the orbital. In order to calculate the energy difference between the two electron orbital
+levels you need to calculate the energy of the photon equivalent to the wavelength of highest
+absorption. Using the crystal field theory to calculate the value of Δo Δo
+hc
+=
+using the equation ,
+λ
+we can find the energy of the photon needed to promote the electron in the coordination
+complex , measured in joules.
+16
+Solution Wavelength of maximum
+absorption (nm)
+Δo
+=
+Equation ( )
+hc Energy (joule)
+λ
+786.4 E=
+(6.62×10 )×(3×10 )−34 8
+786.4×10−9
+2 × 1−19
+.53 0
+¯
+3ml .033
+[Cu(H 2 O) 6 ]
+M diluted
+¯
+3ml 0.33
+M
+[Cu(Cl) 4 (H 2 O) 2 ]
+806.1 E=
+(6.62×10 )×(3×10 )−34 8
+806.1×10−9
+2 × 1−19
+.46 0
+¯
+3ml 0.33
+[Cu(NH 3 ) 4 (H 2 O) 2 ]
+642.6 E=
+(6.62×10 )×(3×10 )−34 8
+642.6×10−9
+3 × 1−19
+.09 0
+¯
+3ml 0.33
+M
+[Cu(SCN) 2 (H 2 O) 4 ]
+775.4 E=
+(6.62×10 )×(3×10 )−34 8
+775.4×10−9
+2 × 1−19
+.56 0
+¯
+3ml 0.33
+M
+[Cu(H 2 O) 4 (OH) 2 ]
+655.1 E=
+(6.62×10 )×(3×10 )−34 8
+655.1×10−9
+3 × 1−19
+.03 0
+Bringing back the spectrochemical series mentioned in the background information, most of the
+values here hold true to the order of energy difference between them. Since the repulsion of
+ammonia has a much greater effect on the d-orbital than chlorine, thiocyanate and water, the
+split in the d-orbital is greater and therefore requires more energy to promote an electron. The
+trend continues as the values of the energy needed to promote an electron increase for
+chlorine, water and thiocyanate in the order that is expected from the spectrochemical series.
+However, the value for sodium hydroxide does not match the hypothesised energy needed in
+order to promote an electron according to the calculations. The reason behind this is because
+there was an oversight when
+17
+Part 2
+During the measurements regarding the absorbance over time (change in absorbance) the
+effect of changing the concentration does what would be expected for most of the solutions,
+however has some interesting effect on some of them.
+When measuring the absorbance over time for different concentration for a solution such as
+[ 3 4 2 2
+Cu(N H ) (H O) ]
+, there is a strong linear trend showing that as the concentration of the
+ammonia solution increases the absorbance increases by a linear amount. There are some
+uneven changes in the absorptivity when changing the concentration, however, not big enough
+to cause any anomalous data.
+One of the tests that yielded unexpected results was the reaction between the hydrated copper
+(II) sulfate and the hydrochloric acid. During these tests the absorption was the highest when
+reacting with 1M HCl, however the absorption was higher when having reacted with the 0.2M
+than with the 0.5M. The R 2 for the trend line suggest there is some anomalous data, which can
+be seen by eye.
+A linear line of best fit is the optimal trend line for due to the beer-lambert law equation being a
+single variable equation where the concentration is the only factor that affects the absorbance.
+The results gathered from the reaction creating [Cu(H 2 O) 4 (OH) 2 ] was expected to happen as it
+was stated in the part 1 analysis that the reaction creates a precipitate that will only dissolve if
+there is an excess amount of hydroxide ions. Though the trend line is one of the best out of the
+18
+graphs, due to there being a precipitate the beer-lambert law does not apply as it only works
+fully with solutions void of precipitate.
+The reaction between the potassium thiocyanate and hydrated copper (II) sulfate is the most
+puzzling, as the best regression line is logarithmic with a R 2 value of 0.996. The best
+explanation for this occurrence is that since it is very close to water in the spectrochemical
+series a large change can be seen with a relative low equilibrium difference between the two
+ligands.
+Calculating the theoretical concentration of the copper complexes:
+Concentration of
+ammonia solution
+added (M)
+Absorption (A) Molar attenuation
+coefficient ( )
+ε
+calculated
+concentration of
+[Cu(NH 3 ) 4 (H 2 O) 2 ] 1 1.641 3.838 0.428
+0.5 1.089 3.838 0.284
+0.2 0.993 3.838 0.259
+0.1 0.837 3.838 0.218
+(path length is 1)
+Following this process for all the reagents, a list is gathered as shown below (going from the
+highest concentration reagent to lowest):
+ε = 1
+.788)
+calculated concentration of [Cu(Cl) 4 (H 2 O) 2 ] (M)( :
+M=
+0.501 = 0
+.280
+1.788
+M=
+0.356 = 0
+.199
+1.788
+M=
+0.408 = 0
+.228
+1.788
+M=
+0.326 = 0
+.182
+1.788
+(M)
+19
+ε = 3
+.838)
+calculated concentration of [Cu(SCN) 2 (H 2 O) 4 ] (M)( :
+M=
+0.864 = 0
+.225
+3.838
+M=
+0.707 = 0
+.184
+3.838
+M=
+0.564 = 0
+.147
+3.838
+M= 0.41
+3.838
+= 0
+.107
+Through this process a conclusion can be made that the data collected has a high degree of
+systematic error such that there is a systematic error when recording the [Cu(NH 3 ) 4 (H 2 O) 2 ]
+since the theoretical yield was greater than the starting amount. As well as the data points
+located on the graph of absorbance over concentration not following clear and reasonable
+patterns.
+Evaluation of methodology:
+One of the major strengths with the methodological process in this experiment was that all of the
+processes were very controlled and carefully made sure to not have any uncertainty or error.
+However, having a process be very carefully put together and structured made collecting data
+take a lot of time. Data collection started before the summer break and was only able to gather
+the minimum amount of data needed in order to analyse and discuss it to a feasible degree a
+few days before the final draft was due. Furthermore, systematic errors occurred regardless of
+the precautions taken as can be seen by some of the data and the correlation it bears due to the
+time span in between the allocated time which data collection was possible. This means that
+coming to a conclusion based on the data available is more difficult and some extrapolation and
+interpretation had to be made in order to cover for the errors. Decreasing the level of control in
+the lab would speed up the process, decreasing the number of systematic errors that would
+occur due to inexperience and memory loss of the procedure as a result of weeks or months
+passing by.
+20
+Conclusion:
+When changing the ligands that are attached to a central metal ion, the greater the energy
+difference they produce on the d-orbital the more energy an incoming light wave must have in
+order to promote the electron to the upper d-orbitals. As the concentration of aqueous solution
+of complex ion structures increases, the greater the absorbance of incoming light waves. The
+degree to which this happens however is dependent on the molar attenuation coefficient as a
+standard higher coefficient will have a higher effect on an concentration.
+Bibliography:
+Works Cited
+21
+Copper , www.chemguide.co.uk/inorganic/transition/copper.html.
+“Beer's Law.
+” Encyclopædia Britannica , Encyclopædia Britannica, Inc.,
+www.britannica.com/science/Beers-law.
+“Crystal Field Splitting.
+” Crystal Field Splitting - an Overview | ScienceDirect Topics ,
+www.sciencedirect.com/topics/chemistry/crystal-field-splitting.
+“Cu(II) Complexes as PType Dopants in Efficient Perovskite Solar Cells.
+”
+doi:10.1021/acsenergylett.6b00691.s001.
+Libretexts.
+“5.9: Spectrochemical Series.
+” Chemistry LibreTexts , Libretexts, 14 July 2020,
+chem.libretexts.org/Bookshelves/Inorganic
+_
+Chemistry/Book:
+Introduction
+to
+_
+_
+_
+Inorganic
+_
+C
+hemistry/05:
+Coordination
+_
+_
+Chemistry_
+and
+_
+Crystal
+Field
+_
+_
+Theory/5.09:
+_
+Spectrochemical
+Series.
+_
+Libretexts.
+“Crystal Field Theory.
+” Chemistry LibreTexts , Libretexts, 16 Sept. 2020,
+chem.libretexts.org/Bookshelves/Inorganic
+_
+Chemistry/Modules
+and
+Websites
+_
+_
+_(Inorganic
+_
+Chemistry)/Crystal
+Field
+_
+_
+Theory/Crystal
+Field
+_
+_
+Theory.
+Norkus, Eugenijus, and Algirdas Vaškelis.
+“Determination of Tetrahydroxycuprate and
+Copper(II)-NTA Complex Stability Constants by Polarographic and Spectrophotometric
+Methods.
+” Polyhedron , Pergamon, 10 Apr. 2001,
+www.sciencedirect.com/science/article/abs/pii/S0277538700836682.
+“Shapes of the 3d Orbitals in 3D.
+” ChemTube3D , 30 Aug. 2019,
+www.chemtube3d.com/orbitals-d/.
+“Tutor.net.
+” Video , www.video-tutor.net/.
+22
+Appendices
+Text Appendix:
+Detailed variables appendix:
+Variable Concentration
+of copper
+sulfate
+Independent variable
+How will the experiment change
+The concentration of the complex ion solution will be decreased by
+approximately half each time going from 1M, 0.5M, 0.2M, 0.1M, apart from
+KSCN which will have those concentrations divided by 10. The solutions will be
+23
+solution diluted using distilled water.
+Reagent used
+Different reagents will be reacted with the copper sulfate solution in order to
+view the difference in change between a substitution in ligands. The different
+reagents will be hydrochloric acid, ammonia in solution, potassium
+thiocyanate
+Variable Absorbance
+Time
+Peak
+wavelength
+Dependant variable
+How will the experiment be measured
+A spectrometer will measure how much light of a certain wavelength a solution
+absorbs by shining a multichromatic light through
+During the process of measuring absorbance for a certain wavelength the time
+will also be measured in order to get a change in absorbance over time reading
+Measuring and analysing the peak wavelength will show what wavelength and
+color of light the complex compound absorbs and inversely emits.
+Variable Amount of
+copper
+solution used
+in reaction
+Path length
+controlled variable
+How will the experiment be controlled
+When preparing the reaction in part 1 the ratio between the reactants have to be
+precise as there are certain complex structures that will undergo a reverse
+reaction if there are excess of the ligand that is trying to be removed/substituted.
+Therefore, the stoichiometric coefficient needs to be found of the reactants so
+the proper amount of each can be found
+Since Beer’s law uses the path length in the equation to find the absorbance, in
+order to not overcomplicate things keeping the path length the same using the
+same model of spectrometer is the easiest
+In part 2 of the experiment the reactions will have to be done in the cuvettes in
+order to be able to analyse the solutions completely from start until the desired
+end. So creating a reaction ratio between volume of hydrated copper (II) sulfate
+and the volume of a certain concentration of reagent is needed. Since the
+cuvette has an approximate volume of 3cm 3
+, 1ml of the hydrated copper (II)
+sulfate solution will be reacted with 2ml of the reagent.
+Final volume
+of reacted
+solution
+Uncertainty of
+the volume
+measuring
+devices
+Calculation of the uncertainty that will be described in the evaluation will have to
+be made in order to the results to range from
+24
+Detailed method appendix:
+Part 1
+1. 2. 3. 4. 5. 6. Connect a PASCO spectrometer to a computer that has the PASCO spectrometry
+application installed.
+Opening the application calibrate the spectrometer by filling a cuvette with distilled water,
+placing it in the cuvette and pressing the light calibration and dark calibration.
+Make sure that the measurement that is going to be taken is a graph of absorbance over
+wavelength, giving you a description of the light absorbed by the solution in the different
+wavelengths.
+Take one beaker and fill it up with an excess amount of 1mol/dm CuSO 4 and using a
+pipette, pour 1ml of the solution in a different beaker followed with 9ml of water in order
+to create a 0.1mol/dm solution.
+Take another beaker and fill it up with an excess amount of one of the reagents
+(hydrochloric acid, sodium hydroxide, potassium thiocyanate and ammonium hydroxide).
+Pouring 1ml of the reagent into a measuring cylinder dilute with distilled water in order to
+create a 0.5M solution of the reagent (HCl: 1HCl:3H 2 O, NaOH: 1NaOH:1H 2 O, NH 4 OH:
+1NH 4 OH:1.5H 2 O, KSCN should not be diluted).
+25
+7. 8. 9. Using a pipette, pour 1ml 0.1M CuSO 4 into a cuvette and add 2ml of the 0.5M reagent
+solution to let the reaction occur.
+Once the reaction has stopped and there is no more visual change in the solution, place
+it into the spectrometer and press the record button twice with an interval of about 5
+seconds. Doing this makes sure that the measurement that it taken is stopped and
+recorded but also that the chance of getting a faulty reading is decreased.
+Don’t forget to label the runs so that you know what graph is representative of what
+reaction, it will become important in part 2.
+10. Repeat steps 5-8 and change the reagents used in the reaction between the ones listed
+above to gain multiple different tests on different complex solutions.
+Part 2
+11. After repeating steps 5-8 until a measurement of all the samples has been made, select
+a point on the graph with the coordinate tool which has the highest absorbance and
+select it with the tick mark.
+12. Repeat step 10 for each of the solutions recorded in part one.
+13. Now in the spectroscopy application click on the graph labeled time in the top left, this
+will now present a graph showing the absorbance of a certain wavelength over time.
+14. On the page with the graph absorbance over time an option to choose active solution is
+located to the right of the record button.
+15. Set the sample rate to 5 Hertz
+16. Having labeled the runs, choose the reaction that you did previously so that you can
+measure the speed of the reaction in terms of the absorbance of its peak wavelength
+over the recording period of time.
+26
+17. Now repeat steps 5-8 changing the concentration of the reagent solutions (1M, 0.5M,
+0.2M, 0.1M)
+Data collection:
+Part 1
+Peak absorbance after reacting with 1ml .1M CuSO4
+2ml .5M HCl 2ml 0.5M NH3 2ml .1M KSCN 2ml 0.5M NaOH
+Wavelength of peak
+absorbance (nm) 806.1 642.6 775.4 655.1
+Part 2
+Peak absorbance after reacting with 1ml .1M CuSO4 (A)
+Concentration: HCl NH3 KSCN NaOH
+1 0.501 1.614 0.864 1.35
+0.5 0.356 1.089 0.707 1.58
+0.2 0.408 0.993 0.564 1.69
+0.1 0.326 0.837 0.41 1.73
+Uncertainty calculations:
+Pipette uncertainty:
+5ml pipette: 0.01
+2ml pipette: 0.006
+1ml pipette: 0.006
+absolute uncertainty in reagent measurement (ml)
+concentration: HCl NH3 KSCN NaOH
+1 0.024 0.022 x 0
+27
+0.5 0.03 0.022 x 0.024
+0.2 0.022 0.022 x 0.022
+0.1 0.022 0.022 0 0.022
+0.05 x x 0.024 x
+0.02 x x 0.022 x
+0.01 x x 0.022 x
+absolute uncertainty in concentration (M)
+concentration: HCl NH3 KSCN NaOH
+1 0.004 0.003667 x 0
+0.5 0.0025 0.001833 x 0.002
+0.2 0.000733 0.000733 x 0.000733
+0.1 0.000367 0.000367 0 0.000367
+0.05 x x 0.0002 x
+0.02 x x 0.0000733 x
+0.01 x x 0.0000367 x
+Absolute uncertainty in absorption (A)
+concentration: HCl NH3 KSCN NaOH
+1 0.0032064 0.0094688 x 0
+0.5 0.002848 0.0063888 x 0.010112
+0.00991466666
+0.2 0.0023936 0.0058256 x
+0.00191253333
+7
+0.1
+3 0.0049104 0 0.01014933333
+0.05 x x 0.0045248 x
+0.02 x x 0.0033088 x
+0.01 x x
+0.00240533333
+3 x
+28
+Picture appendix:
+(A)
+¯
+Figure A - 3ml .033
+M diluted [Cu(H 2 O) 6 ]
+(B)
+29
+(C)
+(D)
+¯
+Figure B - 3ml 0.33
+M [Cu(Cl) 4 (H 2 O) 2 ]
+¯
+Figure C - 3ml 0.33
+M [Cu(NH 3 ) 4 (H 2 O) 2 ]
+30
+¯
+Figure D - 3ml 0.33
+M [Cu(SCN) 2 (H 2 O) 4 ]
+(E)
+¯
+Figure E - 3ml 0.33
+M [Cu(H 2 O) 4 (OH) 2 ]
+31
+(F)
+32
+Figure F - raw data of wavelength over time for hydrochloric acid
+(G)
+33
+Figure G - raw data of wavelength over time for ammonia solution
+(H)
+34
+Figure H - raw data of wavelength over time for sodium hydroxide
+(I)
+35
+Figure F - raw data of wavelength over time for potassium thiocyanate
+(J)
+36
+(also picture J)
+Figure J - worked graph of data for reaction between copper (II) sulfate and ammonia solution
+(K)
+37
+(Also picture K)
+Figure J - worked graph of data for reaction between copper (II) sulfate and Hydrochloric acid
+(L)
+38
+(also picture L)
+Figure J - worked graph of data for reaction between copper (II) sulfate and Potassium
+thiocyanate
+(M)
+39
+(also picture M)
+Figure J - worked graph of data for reaction between copper (II) sulfate and sodium hydroxide

@@ -14,12 +14,10 @@ class Node:
 
 
 def calculate_frequency(text):
-    """Calculate frequency of each character in the text."""
     return Counter(text)
 
 
 def build_priority_queue(frequencies):
-    """Build a priority queue from character frequencies."""
     heap = []
     for char, freq in frequencies.items():
         heapq.heappush(heap, Node(char, freq))
@@ -27,7 +25,6 @@ def build_priority_queue(frequencies):
 
 
 def build_huffman_tree(heap):
-    """Build Huffman Tree from the priority queue."""
     while len(heap) > 1:
         left = heapq.heappop(heap)
         right = heapq.heappop(heap)
@@ -42,7 +39,6 @@ def build_huffman_tree(heap):
 
 
 def generate_codes(root, current_code, codes):
-    """Recursively traverse the tree to generate Huffman codes."""
     if root is None:
         return
 
@@ -54,14 +50,12 @@ def generate_codes(root, current_code, codes):
 
 
 def get_huffman_codes(root):
-    """Get Huffman codes for each character."""
     codes = {}
     generate_codes(root, "", codes)
     return codes
 
 
 def serialize_tree(node):
-    """Serialize the Huffman tree into a nested dictionary."""
     if node is None:
         return None
     if node.char is not None:
@@ -73,9 +67,22 @@ def serialize_tree(node):
     }
 
 
-def compress(text, output_data_path='compressed_words.bin', output_tree_path='compressed_words.bin.tree'):
+def deserialize_tree(tree_dict):
+    if tree_dict is None:
+        return None
+    if "char" in tree_dict:
+        return Node(tree_dict["char"], tree_dict["freq"])
+    node = Node(None, tree_dict["freq"])
+    node.left = deserialize_tree(tree_dict["left"])
+    node.right = deserialize_tree(tree_dict["right"])
+    return node
 
-    """Compress the input text using Huffman coding and store the results in binary files."""
+
+def compress(input_text_file, output_data_path="compressed_words.bin", output_tree_path="compressed_words.bin.tree"):
+    """Compress the input text file using Huffman coding and save the results."""
+    with open(input_text_file, "r") as file:
+        text = file.read()
+
     frequencies = calculate_frequency(text)
     heap = build_priority_queue(frequencies)
     root = build_huffman_tree(heap)
@@ -89,13 +96,61 @@ def compress(text, output_data_path='compressed_words.bin', output_tree_path='co
     else:
         padding_length = 0
 
-    byte_data = int(encoded_text, 2).to_bytes((len(encoded_text) + 7) // 8, byteorder='big')
+    byte_data = int(encoded_text, 2).to_bytes((len(encoded_text) + 7) // 8, byteorder="big")
 
-    with open(output_data_path, 'wb') as data_file:
+    with open(output_data_path, "wb") as data_file:
         data_file.write(byte_data)
 
     tree_dict = serialize_tree(root)
-    with open(output_tree_path, 'wb') as tree_file:
+    with open(output_tree_path, "wb") as tree_file:
         pickle.dump((tree_dict, padding_length), tree_file)
 
-    return byte_data, len(byte_data)
+
+def decompress(
+    input_data_path="compressed_words.bin",
+    input_tree_path="compressed_words.bin.tree",
+    output_text_path="huffman_decompressed.txt",
+):
+    """Decompress the binary file and save the decompressed text to a file."""
+    with open(input_tree_path, "rb") as tree_file:
+        tree_dict, padding_length = pickle.load(tree_file)
+
+    root = deserialize_tree(tree_dict)
+
+    with open(input_data_path, "rb") as data_file:
+        byte_data = data_file.read()
+
+    bit_string = "".join(f"{byte:08b}" for byte in byte_data)
+    if padding_length > 0:
+        bit_string = bit_string[:-padding_length]
+
+    decoded_text = []
+    current_node = root
+
+    for bit in bit_string:
+        current_node = current_node.left if bit == "0" else current_node.right
+
+        if current_node.char is not None:
+            decoded_text.append(current_node.char)
+            current_node = root
+
+    decompressed_text = "".join(decoded_text)
+
+    # Write the decompressed text to the output file
+    with open(output_text_path, "w") as output_file:
+        output_file.write(decompressed_text)
+
+
+if __name__ == "__main__":
+    input_text_file = "words.txt"
+    compressed_file = "huffman_compressed.bin"
+    tree_file = "huffman_tree.bin"
+    decompressed_file = "huffman_decompressed.txt"
+
+    # Compress the input file
+    compress(input_text_file, compressed_file, tree_file)
+
+    # Decompress to the output file
+    decompress(compressed_file, tree_file, decompressed_file)
+
+

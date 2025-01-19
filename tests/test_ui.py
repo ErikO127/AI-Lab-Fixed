@@ -1,8 +1,9 @@
-from src.UI_implementation import CompressorUI
-import pytest
-from PyQt5.QtCore import Qt
 import os
+import pytest
 from pathlib import Path
+from PyQt5.QtCore import Qt
+
+from src.UI_implementation import CompressorUI
 
 @pytest.fixture
 def app(qtbot):
@@ -10,55 +11,77 @@ def app(qtbot):
     qtbot.addWidget(widget)
     return widget
 
-def test_ui_compress_words_file(app, qtbot, tmp_path):
-    # Change the current working directory to tmp_path so that all files are created there
-    os.chdir(tmp_path)
+@pytest.fixture
+def protein_file_in_tmp(tmp_path):
+    """
+    Copy protein_word.txt from src to the tmp_path and return its Path.
+    """
+    src_dir = Path(__file__).parent.parent / "src"
+    source_file = src_dir / "protein_word.txt"
+    target_file = tmp_path / "protein_word.txt"
+    target_file.write_text(source_file.read_text(encoding="utf-8"), encoding="utf-8")
+    return target_file
 
-    input_text = """Background information:
-The term spectrochemical can be broken into two different words describing what it means,
-spectro- which refers to the electromagnetic spectrum, and chemical which links to atomic
-chemical properties. Ligands are a part of a unique area in chemistry explaining many
-phenomenons when it comes to colors that we observe and have been used by humans for a
-long time stretching back as far as ancient egyptians and are still in us in today's world.
-Coordination compounds are atomic compounds that are formed when a special types of bonds
-are formed between the central ion and the outer ligands. The central ion is always metallic and
-the outer ion can be a variety of different common non metallic molecules or atomic ions which
-in a complex compound are named Ligands."""
+def test_ui_compress_protein_file(app, qtbot, protein_file_in_tmp):
+    """
+    Integration test: 
+    - "Select" the protein_word.txt (copied into tmp_path)
+    - Click compress
+    - Check the results
+    """
+    # 1) Simulate user selecting that file
+    app.selected_files = [str(protein_file_in_tmp)]
 
-    app.text_input.setPlainText(input_text)
-
-    # Write the input text to a temporary file inside tmp_path
-    input_file = tmp_path / "temp_input.txt"
-    input_file.write_text(input_text)
-
-    # Instead of mocking LZW compression, let's just run the actual compression for realistic results
+    # 2) Click the "Compress..." button
     qtbot.mouseClick(app.compress_button, Qt.LeftButton)
 
-    # Parse the output text from the results
+    # 3) Parse the output text
     text_output = app.text_results.toPlainText()
     lines = text_output.strip().split("\n")
 
-    # Expected lines format:
-    # Original Text Size: X bytes
+    # We expect lines like:
+    # File: ...
+    # Original Size: X bytes
     # Huffman Compressed Size: Y bytes
-    # Lempel-Ziv Compressed Size: Z bytes
-    size_map = {}
+    # Huffman Decompressed Size: Z bytes
+    # Lempel-Ziv Compressed Size: A bytes
+    # Lempel-Ziv Decompressed Size: B bytes
+    # ...
+    parsed = {}
     for line in lines:
-        parts = line.split(":")
-        key = parts[0].strip()
-        val_str = parts[1].strip().split()[0]  # Get the number before 'bytes'
-        val = int(val_str)
-        size_map[key] = val
+        if "Original Size:" in line:
+            parsed["original"] = int(line.split(":")[1].strip().split()[0])
+        elif "Huffman Compressed Size:" in line:
+            parsed["huffman_compressed"] = int(line.split(":")[1].strip().split()[0])
+        elif "Huffman Decompressed Size:" in line:
+            parsed["huffman_decompressed"] = int(line.split(":")[1].strip().split()[0])
+        elif "Lempel-Ziv Compressed Size:" in line:
+            parsed["lzw_compressed"] = int(line.split(":")[1].strip().split()[0])
+        elif "Lempel-Ziv Decompressed Size:" in line:
+            parsed["lzw_decompressed"] = int(line.split(":")[1].strip().split()[0])
 
-    original_size = len(input_text.encode("utf-8"))
-    assert size_map["Original Text Size"] == original_size, "Original size should match input text size."
+    # 4) Basic checks
+    original_size = protein_file_in_tmp.stat().st_size
 
-    # Verify that Huffman compression yields a smaller size than the original
-    assert 0 < size_map["Huffman Compressed Size"] < original_size, (
-        f"Huffman compressed size {size_map['Huffman Compressed Size']} is not smaller than original {original_size}."
+    assert parsed.get("original") == original_size, (
+        f"UI reported original size {parsed.get('original')} "
+        f"does not match actual file size {original_size}."
     )
+    # Round-trip checks
+    assert parsed.get("huffman_decompressed") == original_size, (
+        "Huffman decompressed size should match the original file size."
+    )
+    assert parsed.get("lzw_decompressed") == original_size, (
+        "LZW decompressed size should match the original file size."
+    )
+    # Compressed size checks
+    assert parsed.get("huffman_compressed", 0) > 0, "Huffman compressed size should not be 0."
+    assert parsed.get("lzw_compressed", 0) > 0, "LZW compressed size should not be 0."
 
-    # Verify that Lempel-Ziv compression also yields a smaller size than the original
-    assert 0 < size_map["Lempel-Ziv Compressed Size"] < original_size or 0 < size_map["Lempel-Ziv Compressed Size"] > original_size, (
-        f"Lempel-Ziv compressed size {size_map['Lempel-Ziv Compressed Size']} is not smaller than original {original_size}."
+    # Typically, these should be smaller for a decent sized text
+    assert parsed["huffman_compressed"] < original_size, (
+        f"Huffman compressed size {parsed['huffman_compressed']} is not smaller than original {original_size}."
+    )
+    assert parsed["lzw_compressed"] < original_size, (
+        f"LZW compressed size {parsed['lzw_compressed']} is not smaller than original {original_size}."
     )
