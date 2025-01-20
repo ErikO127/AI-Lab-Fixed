@@ -1,7 +1,11 @@
+AUTOMATIC PYTEST COVERAGE:
+
 ============================= test session starts ==============================
 platform darwin -- Python 3.9.6, pytest-7.4.4, pluggy-1.5.0
 PyQt5 5.15.11 -- Qt runtime 5.15.15 -- Qt compiled 5.15.14
-rootdir: /Users/erikolsson/Desktop/UoH Work Folder/AI Labs/AI labs Project
+rootdir: /Users/erikolsson/Desktop/UoH Work Folder/New AI Lab/AI-Lab-Fixed
+configfile: pyproject.toml
+testpaths: tests
 plugins: qt-4.4.0, cov-4.1.0
 collected 3 items
 
@@ -10,14 +14,78 @@ tests/test_lzw.py .                                                      [ 66%]
 tests/test_ui.py .                                                       [100%]
 
 ---------- coverage: platform darwin, python 3.9.6-final-0 -----------
-Name                                                            Stmts   Miss  Cover
------------------------------------------------------------------------------------
-src/ai_labs_project/Huffman3_with_compress_serialized_tree.py      61      2    97%
-src/ai_labs_project/Lempel_with_compress.py                        49      3    94%
-src/ai_labs_project/UI_implementation.py                           52      9    83%
-src/ai_labs_project/__init__.py                                     0      0   100%
------------------------------------------------------------------------------------
-TOTAL                                                             162     14    91%
+Name                                            Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------------------
+src/Huffman3_with_compress_serialized_tree.py      97      9    91%   60, 72, 97, 145-154
+src/Lempel_with_compress.py                        53     11    79%   12-14, 58-60, 97-102
+src/UI_implementation.py                           92     15    84%   58-65, 70-71, 125-126, 153-156
+src/__init__.py                                     0      0   100%
+-----------------------------------------------------------------------------
+TOTAL                                             242     35    86%
 
 
-============================== 3 passed in 0.20s ===============================
+============================== 3 passed in 5.61s ===============================
+
+MANUAL OBSERVATIONS AND CONCLUSIONS:
+
+File: Calc_Textbook.txt
+Original Size: 1262592 bytes
+Huffman Compressed Size: 767832 bytes
+Huffman Decompressed Size: 1262592 bytes
+Lempel-Ziv Compressed Size: 827477 bytes
+Lempel-Ziv Decompressed Size: 1262592 bytes
+
+Huffman size (compression/original): 60.81%
+Lempel-Ziv size (compression/original): 65.53%
+
+File: protein_word.txt
+Original Size: 189820 bytes
+Huffman Compressed Size: 86440 bytes
+Huffman Decompressed Size: 189820 bytes
+Lempel-Ziv Compressed Size: 46016 bytes
+Lempel-Ziv Decompressed Size: 189820 bytes
+
+Huffman size (compression/original): 45.54%
+Lempel-Ziv size (compression/original): 24.24%
+
+File: War_and_Peace.txt
+Original Size: 3267484 bytes
+Huffman Compressed Size: 1811093 bytes
+Huffman Decompressed Size: 3267484 bytes
+Lempel-Ziv Compressed Size: 2106457 bytes
+Lempel-Ziv Decompressed Size: 3267484 bytes
+
+Huffman size (compression/original): 55.43%
+Lempel-Ziv size (compression/original): 64.47%
+
+File: words.txt
+Original Size: 35278 bytes
+Huffman Compressed Size: 21039 bytes
+Huffman Decompressed Size: 35278 bytes
+Lempel-Ziv Compressed Size: 29949 bytes
+Lempel-Ziv Decompressed Size: 35278 bytes
+
+Huffman size (compression/original): 59.64%
+Lempel-Ziv size (compression/original): 84.89%
+
+File: Short_Story.txt
+Original Size: 1168 bytes
+Huffman Compressed Size: 632 bytes
+Huffman Decompressed Size: 1168 bytes
+Lempel-Ziv Compressed Size: 1541 bytes
+Lempel-Ziv Decompressed Size: 1168 bytes
+
+Huffman size (compression/original): 54.10%
+Lempel-Ziv size (compression/original): 131.93%
+
+Through these test results, we can see an interesting trend in the efficiency of the compression algorithms as neither of them is consistently more effective than the other, and in some cases, they are 
+worse than not compressing at all. In the examples Calc_textbook, War_and_Peace, and Words, we can see that Huffman compression is the clear winner, but Lempel-Ziv provides some decent results too. In these
+cases, we can see that since each text has non-recurring patterns, Huffman compression does better since it creates low byte size replacements for singular characters, whereas Lempel compression tries to find
+patterns and recursion, which doesn't happen due to their varying content throughout the text. The test where we see the Lempel compression shine, however, is in the protein word. We can see in this case that since
+the name for the protein (in this case, the longest name for a singular protein in the world) has many occurrences of the same names, such as amino acid groups and organic bond names, the Lempel compression
+method is able to create very small byte-sized replacements for large strings, making it more efficient than the Huffman method. Considering that the compressed size was able to be less than 25% of the size of
+the original, it can be said that this test was tailor-made for the Lempel-Ziv style of compression. The Lempel method, however, struggles when trying to compress small files with little to no recurring elements, as
+seen in the Short_Story example, where the Huffman compression performed well as usual, but the Lempel compression ended up creating a file larger than the original. In conclusion, this shows that when trying
+to compress general txt files where a large range of topics and styles of writing are of concern, Huffman is the preferred method due to its consistency. However, if the file being compressed is certain to have
+repeatedly recurring patterns or a file that spans tens of MB in size where recursion becomes inevitable through the sheer number of characters, the Lempel-Ziv style of compression is going to be able to 
+get greater results due to pattern recognition.

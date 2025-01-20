@@ -5,21 +5,23 @@ from PyQt5.QtCore import Qt
 import pandas as pd
 import matplotlib.pyplot as plt
 import importlib.util
+from pathlib import Path
 import os
 import sys
 
 
 # Load the Huffman and Lempel modules dynamically
 def load_module_from_file(file_name, module_name):
-    file_path = os.path.abspath(file_name)
+    current_dir = Path(__file__).resolve().parent
+    file_path = current_dir / file_name    
     spec = importlib.util.spec_from_file_location(module_name, file_path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
 
 
-huffman_module = load_module_from_file("src/Huffman3_with_compress_serialized_tree.py", "huffman")
-lempel_module = load_module_from_file("src/Lempel_with_compress.py", "lempel")
+huffman_module = load_module_from_file("Huffman3_with_compress_serialized_tree.py", "huffman")
+lempel_module = load_module_from_file("Lempel_with_compress.py", "lempel")
 
 
 class CompressorUI(QMainWindow):

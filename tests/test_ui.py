@@ -23,12 +23,6 @@ def protein_file_in_tmp(tmp_path):
     return target_file
 
 def test_ui_compress_protein_file(app, qtbot, protein_file_in_tmp):
-    """
-    Integration test: 
-    - "Select" the protein_word.txt (copied into tmp_path)
-    - Click compress
-    - Check the results
-    """
     # 1) Simulate user selecting that file
     app.selected_files = [str(protein_file_in_tmp)]
 
@@ -39,14 +33,6 @@ def test_ui_compress_protein_file(app, qtbot, protein_file_in_tmp):
     text_output = app.text_results.toPlainText()
     lines = text_output.strip().split("\n")
 
-    # We expect lines like:
-    # File: ...
-    # Original Size: X bytes
-    # Huffman Compressed Size: Y bytes
-    # Huffman Decompressed Size: Z bytes
-    # Lempel-Ziv Compressed Size: A bytes
-    # Lempel-Ziv Decompressed Size: B bytes
-    # ...
     parsed = {}
     for line in lines:
         if "Original Size:" in line:
